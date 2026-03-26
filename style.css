@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 48px;
 }
@@ -924,6 +924,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     transition: border-color 0.3s;
+    max-width: 420px;
 }
 
 #email-input:focus {
