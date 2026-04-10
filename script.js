@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Console message
-    console.log('%c🌱 ONG Elos Reciclagem', 'color: #8FBC5A; font-size: 24px; font-weight: bold;');
+    console.log('%c🌱 ONG E-Consciência', 'color: #8FBC5A; font-size: 24px; font-weight: bold;');
     console.log('%cConstruindo um futuro verde através da educação!', 'color: #5A7A4D; font-size: 14px;');
 });
 

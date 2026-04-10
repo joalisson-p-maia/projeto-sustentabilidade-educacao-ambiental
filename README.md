@@ -1,8 +1,8 @@
-# Landing Page - ONG Elos Reciclagem
+# Landing Page - ONG E-Consciência
 
 ## 📋 Descrição
 
-Landing page completa para a ONG Elos Reciclagem, focada em educação sustentável para crianças e apresentação do jogo educativo "Super Coletor".
+Landing page completa para a ONG E-Consciência, focada em educação sustentável para crianças e apresentação do jogo educativo "Super Coletor".
 
 ## 📁 Estrutura dos Arquivos
 
@@ -38,7 +38,7 @@ export/
 ## 📱 Seções da Página
 
 1. **Header (Cabeçalho)**
-   - Logo da ONG Elos Reciclagem
+   - Logo da ONG E-Consciência
    - Menu de navegação
    - Botão CTA "Conheça o Jogo"
 
@@ -157,7 +157,7 @@ O design é totalmente responsivo com breakpoints em:
 
 ## 📄 Licença
 
-Este design é um exemplo educativo para a ONG Elos Reciclagem (fictícia).
+Este design é um exemplo educativo para a ONG E-Consciência (fictícia).
 
 ## 🤝 Suporte
 
@@ -167,4 +167,4 @@ Para questões ou customizações, consulte os comentários nos arquivos CSS e J
 
 **Desenvolvido com 💚 para um futuro mais sustentável**
 
-🌱 ONG Elos Reciclagem - Construindo um futuro verde
+🌱 ONG E-Consciência - Construindo um futuro verde
