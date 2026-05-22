@@ -913,21 +913,29 @@ body {
 
 .newsletter-form {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    min-width: 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
 
 #email-input {
-    width: 100%;
-    padding: 16px 24px;
-    border-radius: 16px;
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 12px 16px;
+    border-radius: 16px 0 0 16px;
     background-color: var(--cream);
     border: 2px solid var(--beige-light);
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 400;
     transition: border-color 0.3s;
-    max-width: 450px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 #email-input:focus {
@@ -936,21 +944,23 @@ body {
 }
 
 .btn-submit {
-    width: 100%;
+    flex: 0 0 auto;
     background: linear-gradient(to right, var(--green-soft), var(--green-olive));
     color: white;
     border: none;
-    padding: 16px 24px;
-    border-radius: 16px;
+    padding: 12px 20px;
+    border-radius: 0 16px 16px 0;
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     transition: all 0.3s;
     box-shadow: 0 4px 12px rgba(143, 188, 90, 0.3);
+    box-sizing: border-box;
+    max-width: 220px;
 }
 
 .btn-submit:hover {
@@ -1030,7 +1040,7 @@ body {
 .footer {
     background: linear-gradient(to bottom, var(--green-dark), #4A6A3D);
     color: white;
-    padding: 64px 0;
+    padding: 64px 0 20px 0;
 }
 
 .footer-grid {
@@ -1194,6 +1204,84 @@ body {
 
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small-screen tweaks for .community-section down to ~290px */
+@media (max-width: 480px) {
+    .community-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .community-image img {
+        width: 100%;
+        height: auto;
+        max-height: 360px;
+        object-fit: cover;
+    }
+
+    .community-heading {
+        font-size: 24px;
+    }
+
+    .newsletter-card {
+        padding: 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    #email-input {
+        border-radius: 16px;
+        padding: 10px 12px;
+        width: 100%;
+    }
+
+    .btn-submit {
+        border-radius: 16px;
+        padding: 10px 14px;
+        width: 100%;
+        max-width: none;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .image-quote {
+        padding: 16px;
+        left: 12px;
+        right: 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .community-heading {
+        font-size: 20px;
+    }
+
+    .newsletter-card {
+        padding: 14px;
+    }
+
+    #email-input {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .community-image img {
+        max-height: 240px;
     }
 }
 
